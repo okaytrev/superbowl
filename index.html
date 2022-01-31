@@ -3,11 +3,19 @@
     <link href="style.css" rel="stylesheet">
     <script src="confirm.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Super Bowl Pick' Em</title>
 </head>
 <body>
+    <div class="header">
+        <img class="rams" src="media/rams.jpeg" width="100px" length="100px">
+        <img class="bengals" src="media/bengals.jpeg" width="100px" length="100px">
+    </div>
     <section id="main">
         <form id="main_form" onsubmit='loading()' class="gform" action="https://script.google.com/macros/s/AKfycbwsbjmuJl9b0EuHOUW1wT_gqt3Ec5TaBJIC1lvJCsc6ZRFI5fg0rhd8Fl9RMyzuaEwX/exec" data-email="trevabooo@gmail.com" method="POST">
+            <h1>Super Bowl Pick' Em</h1>
             <h2>1 Point Questions</h2>
             <label>Who will win?:</label>
                 <input type="radio" id="winner" name="winner" value="Rams" required>
@@ -69,7 +77,7 @@
                 <input type="radio" id="penalty" name="penalty" value="Bengals">
                 <label for="penalty">Bengals</label>
             <br>
-            <label for="defense">Will defense score?:</label>
+            <label for="defense">Will the defense score?:</label>
                 <input type="radio" id="defense" name="defense" value="Yes" required>
                 <label for="defense">Yes</label>
                 <input type="radio" id="defense" name="defense" value="No">
@@ -130,7 +138,7 @@
                 <input type="radio" id="defense" name="defense" value="No">
                 <label for="defense">No</label>
             <h2>3 Point Questions</h2>
-            <label for="turnovers">3+ turnovers?:</label>
+            <label for="turnovers">3+ combined turnovers?:</label>
                 <input type="radio" id="turnovers" name="turnovers" value="Yes" required>
                 <label for="turnovers">Yes</label>
                 <input type="radio" id="turnovers" name="turnovers" value="No">
@@ -151,16 +159,15 @@
             <label for="tiebreak">Tie Breaker - Total Point Scored?:</label>
             <input type="number" name="tiebreak" id="tiebreak" min="1" max="150" required>
             <br>
-            <br>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required>
+            <br>
+            <input type="submit" value="Submit Response">
+            <input type="button" value="Print Picks" onclick="window.print()">
             <div style="display:none" class="thankyou_message">
                 <!-- You can customize the thankyou message by editing the code below -->
             <h2><em>Thanks! </em>Your picks have been submitted!</h2>
             </div>
-            <br>
-            <input type="submit" value="Submit Response">
-            <input type="button" value="Print Picks" onclick="window.print()">
         </form>
     </section>
     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
