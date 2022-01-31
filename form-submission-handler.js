@@ -76,6 +76,7 @@
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
+              document.body.style.cursor='default'
             }
           }
       };
