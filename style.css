@@ -20,6 +20,7 @@ h2 {
     color: #044c9b;
 }
 
+
 .header {
     top: 0;
     left: 0;
@@ -51,4 +52,10 @@ form input[type="submit"], form input[type="button"] {
     color: #fbe404;
     border: 2px solid #fbe404;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        font-size: 1.25em;
+    }
 }
