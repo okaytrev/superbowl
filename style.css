@@ -1,0 +1,19 @@
+body {
+    background-color: #33415C;
+    font-family: "Open Sans", Arial;
+    color: black;
+  }
+
+ form {
+    line-height: 30px;
+    background-color: #979DAC;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
+    border: 5px solid black;
+  }
+
+ 
+  
