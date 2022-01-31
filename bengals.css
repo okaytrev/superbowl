@@ -1,23 +1,24 @@
 body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    color: #fbe404;
+    color: black;
+    font-weight: bold;
   }
 
  form {
     line-height: 45px;
-    background-color: #044c9b;
+    background-color: #FE4E00;
     width: 90%;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 15px;
-    border: 2px solid #fbe404;
+    border: 2px solid #FE4E00;
   }
 
 h2 {
-    background-color: #fbe404;
-    color: #044c9b;
+    background-color: black;
+    color: #FE4E00;
 }
 
 .header {
@@ -42,13 +43,13 @@ h2 {
 
 form input[type="text"], form input[type="number"], form input[type="submit"], form input[type="button"] {
     background-color: black;
-    color: #044c9b;
-    border: 2px solid #fbe404;
+    color: #FE4E00;
+    border: 2px solid black;
 }
 
 form input[type="submit"], form input[type="button"] {
     background-color: black;
-    color: #fbe404;
-    border: 2px solid #fbe404;
+    color: #FE4E00;
+    border: 2px solid #FE4E00;
     font-weight: bold;
 }

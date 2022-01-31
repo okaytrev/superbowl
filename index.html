@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link href="style.css" rel="stylesheet">
+    <link id="css_main" href="style.css" rel="stylesheet">
     <script src="confirm.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,8 +10,12 @@
 </head>
 <body>
     <div class="header">
-        <img class="rams" src="media/rams.jpeg" width="100px" length="100px">
-        <img class="bengals" src="media/bengals.jpeg" width="100px" length="100px">
+        <div class="rams_container">
+            <img onclick="rams()" src="media/rams.jpeg" width="100px" length="100px">
+        </div>
+        <div class="bengals_container">
+            <img onclick="bengals()" class="bengals" src="media/bengals.jpeg" width="100px" length="100px">
+        </div>
     </div>
     <section id="main">
         <form id="main_form" onsubmit='loading()' class="gform" action="https://script.google.com/macros/s/AKfycbwsbjmuJl9b0EuHOUW1wT_gqt3Ec5TaBJIC1lvJCsc6ZRFI5fg0rhd8Fl9RMyzuaEwX/exec" data-email="trevabooo@gmail.com" method="POST">
@@ -36,10 +40,10 @@
                 <label for="first_score">Bengals</label>
             <br>
             <label for="score_td">First touchdown?:</label>
-                <input type="radio" id="first_td" name="first_td" value="Yes" required>
-                <label for="first_td">Yes</label>
-                <input type="radio" id="score_td" name="first_td" value="No">
-                <label for="first_td">No</label>
+                <input type="radio" id="first_td" name="first_td" value="Rams" required>
+                <label for="first_score">Rams</label>
+                <input type="radio" id="score_td" name="first_td" value="Bengals">
+                <label for="first_score">Bengals</label>
             <br>
             <label for="fourtyfive">45+ yard touchdown?:</label>
                 <input type="radio" id="fourtyfive" name="fourtyfive" value="Yes" required>
