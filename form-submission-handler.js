@@ -55,6 +55,15 @@
       var form = event.target;
       var formData = getFormData(form);
       var data = formData.data;
+      var confirmAction = confirm("Are you sure you want to submit?");
+
+      // Form submission prompt 
+      if (confirmAction) {
+        document.body.style.cursor='wait';
+        document.getElementById("submit").style.display = 'none';
+      } else {
+        return false;
+      }
   
       // If a honeypot field is filled, assume it was done so by a spam bot.
       if (formData.honeypot) {
