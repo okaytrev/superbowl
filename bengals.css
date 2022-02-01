@@ -53,3 +53,22 @@ form input[type="submit"], form input[type="button"] {
     border: 2px solid #FE4E00;
     font-weight: bold;
 }
+
+#loading {
+    visibility: hidden;
+}
+
+.sheet_link {
+    color: #FE4E00;
+}
+
+#thanks {
+    background-color: black;
+    color: #FE4E00;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        font-size: 1.25em;
+    }
+}

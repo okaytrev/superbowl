@@ -166,16 +166,16 @@
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required>
             <br>
-            <div style="display:none" class="thankyou_message">
-                <!-- You can customize the thankyou message by editing the code below -->
-            <h2><em>Thanks! </em>Your picks have been submitted!</h2>
-            </div>
-            <input id="submit" type="submit" value="Submit Response">
-            <input type="button" value="Print Picks" onclick="window.print()">
             <div id="thanks" style="display:none" class="thankyou_message">
                 <!-- You can customize the thankyou message by editing the code below -->
-            <h2><em>Thanks! </em>Your picks have been submitted!</h2>
+                <h2><em>Thanks! </em>Your picks have been submitted!</h2>
+                <p>Save or print your picks above.</p>
+                <p>Track the results here on gameday - <a class="sheet_link" target="_blank" href="
+                    https://docs.google.com/spreadsheets/d/1bRvlLwhsMP8JJcsvH818rku80xDe1hQtPUjKkna5Fv4/edit?usp=sharing">Pick em' sheet.</a></p>
             </div>
+            <img id="loading" src="media/loading.gif" width="25" height="25">
+            <input id="submit" type="submit" value="Submit Response">
+            <input type="button" value="Print Picks" onclick="window.print()">
         </form>
     </section>
     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>

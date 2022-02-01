@@ -56,11 +56,13 @@
       var formData = getFormData(form);
       var data = formData.data;
       var confirmAction = confirm("Are you sure you want to submit?");
+      var loading = document.getElementById("loading");
+  
 
       // Form submission prompt 
       if (confirmAction) {
-        document.body.style.cursor='wait';
         document.getElementById("submit").style.display = 'none';
+        loading.style.visibility = 'visible';
       } else {
         return false;
       }
@@ -85,7 +87,7 @@
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
-              document.body.style.cursor='default'
+              loading.style.visibility= 'hidden';
             }
           }
       };
