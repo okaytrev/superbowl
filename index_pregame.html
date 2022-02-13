@@ -19,15 +19,7 @@
     </div>
     <section id="main">
         <form id="main_form" class="gform" action="https://script.google.com/macros/s/AKfycbwsbjmuJl9b0EuHOUW1wT_gqt3Ec5TaBJIC1lvJCsc6ZRFI5fg0rhd8Fl9RMyzuaEwX/exec" method="POST">
-            <div id="thanks" class="thankyou_message">
-                <p>Live results - <a class="sheet_link" target="_blank" href="
-                    https://docs.google.com/spreadsheets/d/1bRvlLwhsMP8JJcsvH818rku80xDe1hQtPUjKkna5Fv4/edit?usp=sharing">Pick em' sheet.</a></p>
-            </div>
             <h1>Super Bowl Pick' Em</h1>
-            <h2>Current Results</h2>
-            <p>1st Place: </p>
-            <p>2nd Place: </p>
-            <p>3rd Place: </p>
             <h2>1 Point Questions</h2>
             <label>Who will win?:</label>
                 <input type="radio" id="winner" name="winner" value="Rams" required>
@@ -88,6 +80,12 @@
                 <label for="penalty">Rams</label>
                 <input type="radio" id="penalty" name="penalty" value="Bengals">
                 <label for="penalty">Bengals</label>
+            <br>
+            <label for="defense">Will the defense score?:</label>
+                <input type="radio" id="defense" name="defense" value="Yes" required>
+                <label for="defense">Yes</label>
+                <input type="radio" id="defense" name="defense" value="No">
+                <label for="defense">No</label>
             <br>
             <label for="half_score">25+ points at halftime?:</label>
                 <input type="radio" id="half_score" name="half_score" value="Yes" required>
@@ -162,9 +160,22 @@
                 <input type="radio" id="fifty" name="fifty" value="No">
                 <label for="fifty">No</label>
             <br>
-            <div id="thanks" class="thankyou_message">
-                <p>Live results - <a class="sheet_link" target="_blank" href="
+            <label for="tiebreak">Tie Breaker - Total Point Scored?:</label>
+            <input type="number" name="tiebreak" id="tiebreak" min="1" max="150" required>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <div id="thanks" style="display:none" class="thankyou_message">
+                <h2><em>Thanks! </em>Your picks have been submitted!</h2>
+                <p>Save or print your picks below</p>
+                <p>and track the results on gameday - <a class="sheet_link" target="_blank" href="
                     https://docs.google.com/spreadsheets/d/1bRvlLwhsMP8JJcsvH818rku80xDe1hQtPUjKkna5Fv4/edit?usp=sharing">Pick em' sheet.</a></p>
             </div>
-           
+            <img id="loading" src="media/loading.gif" width="25" height="25">
+            <input id="submit" type="submit" value="Submit Picks">
+            <input type="button" value="Print Picks" onclick="window.print()">
+        </form>
+    </section>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
