@@ -1,8 +1,8 @@
-function rams(){
+function eagles(){
   document.getElementById("css_main").setAttribute('href', "style.css");
 }
 
-function bengals(){
-  document.getElementById("css_main").setAttribute('href', "bengals.css");
+function chiefs(){
+  document.getElementById("css_main").setAttribute('href', "chiefs.css");
 }
 

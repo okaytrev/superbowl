@@ -1,23 +1,23 @@
 body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    color: #fbe404;
+    color: #ACC0C6;
   }
 
  form {
     line-height: 45px;
-    background-color: #044c9b;
+    background-color: #004C54;
     width: 90%;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 15px;
-    border: 2px solid #fbe404;
+    border: 2px solid #ACC0C6;
   }
 
 h2 {
-    background-color: #fbe404;
-    color: #044c9b;
+    background-color: #ACC0C6;
+    color: #004C54;
 }
 
 
@@ -29,11 +29,11 @@ h2 {
     width: 95%;
 }
 
-.rams_container {
+.eagles_container {
     float: left;
 }
 
-.bengals_container {
+.chiefs_container {
     float: right;
 }
 
@@ -43,14 +43,14 @@ h2 {
 
 form input[type="text"], form input[type="number"], form input[type="submit"], form input[type="button"] {
     background-color: black;
-    color: #fbe404;
-    border: 2px solid #fbe404;
+    color: #ACC0C6;
+    border: 2px solid #ACC0C6;
 }
 
 form input[type="submit"], form input[type="button"] {
     background-color: black;
-    color: #fbe404;
-    border: 2px solid #fbe404;
+    color: #ACC0C6;
+    border: 2px solid #ACC0C6;
     font-weight: bold;
 }
 
@@ -63,8 +63,8 @@ form input[type="submit"], form input[type="button"] {
 }
 
 #thanks {
-    background-color: #fbe404;
-    color: #044c9b;
+    background-color: #ACC0C6;
+    color: #004C54;
 }
 
 @media only screen and (min-width: 600px) {
